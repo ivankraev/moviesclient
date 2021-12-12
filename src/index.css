@@ -1,0 +1,14 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  background: rgb(19,18,18);
+  overflow-Y:hidden;
+}
+a{
+  text-decoration: none;
+}

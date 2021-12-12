@@ -1,0 +1,312 @@
+.personalprofilecontainer {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 600px;
+  align-items: flex-start;
+  margin-right: 60px;
+  position: relative;
+}
+.moviescontainer {
+  width: 600px;
+  height: 700px;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: auto;
+  background: #757575;
+  border-radius: 10px;
+}
+.headprofileimage {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  opacity: 0.7;
+  object-fit: cover;
+}
+.profilename {
+  color: white;
+  font-size: 28px;
+  font-family: sans-serif;
+  margin-top: 20px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.accountname {
+  color: lightgrey;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: 8px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+.editprofilebutton {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  margin: 20px 0;
+  opacity: 0.9;
+  border: 1px solid lightgrey;
+  color: lightgrey;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.editprofilebutton:hover {
+  filter: brightness(1.3);
+}
+.cardimg {
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2),
+    12px 12px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+}
+.moviebuttons {
+  background-color: rgba(58, 58, 58, 1);
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  border-radius: 0 0 10px 10px;
+}
+.profileeditmovie {
+  padding: 5px;
+  color: white;
+  background: rgb(64, 64, 121);
+  font-size: 15px;
+  margin: 8px;
+  width: 70px;
+  font-weight: bold;
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 1px rgb(46, 46, 46);
+}
+.profileeditmovie:hover {
+  filter: brightness(1.3);
+}
+.profiledeletemovie {
+  padding: 5px;
+  color: white;
+  background: rgb(163, 26, 26);
+  font-size: 15px;
+  font-weight: bold;
+  margin: 8px;
+  width: 70px;
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 1px rgb(46, 46, 46);
+}
+.profiledeletemovie:hover {
+  filter: brightness(1.3);
+}
+.profilenavitem {
+  list-style: none;
+  font-size: 18px;
+  color: lightgrey;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+}
+.profilemenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.profilenavigation {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.menuicons {
+  margin-right: 3px;
+  color: #b3b3b3;
+}
+.maincontainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    354deg,
+    rgba(0, 0, 0, 0) 12%,
+    rgba(94, 94, 94, 1) 51%,
+    rgba(0, 0, 0, 0) 88%
+  );
+}
+
+.content {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 600px;
+  height: 700px;
+  position: relative;
+  box-shadow: 1px 2px 15px 1px rgb(44, 44, 44);
+}
+.hr {
+  margin-bottom: 10px;
+  width: 100px;
+  margin-left: 112px;
+  transition: all 0.3s ease-in-out;
+}
+.cardholder {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .personalprofilecontainer {
+    transform: scale(0.8);
+    margin: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .content {
+    transform: scaleX(0.7);
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .profilenavigation {
+    transform: scale(0.9);
+  }
+}
+
+.editnameholder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.savecancelbuttons {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.savecancelbutton {
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(119, 119, 119);
+  color: rgb(231, 231, 231);
+  font-weight: bold;
+}
+
+.savecancelbutton:hover {
+  filter: brightness(1.2);
+}
+.editnameinput {
+  outline: none;
+  padding: 5px 10px;
+  background-color: rgb(209, 209, 209);
+  color: rgb(56, 56, 56);
+  font-weight: bold;
+}
+@media screen and (max-width: 700px) {
+  .editnameholder {
+    margin-bottom: -10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .headprofileimage {
+    transform: scale(0.8);
+    margin-bottom: -30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .moviescontainer {
+    padding-left: 75px;
+    padding-right: 60px;
+  }
+}
+.fileinput {
+  display: none;
+}
+.stylefile {
+  width: 50%;
+  height: 30px;
+  color: lightgrey;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2),
+    12px 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#file {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  max-width: 300px;
+  overflow: hidden;
+  height: 28px;
+  opacity: 0.8;
+}
+.uploadbutton {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  margin: 20px 0;
+  opacity: 0.9;
+  border: 1px solid lightgrey;
+  color: lightgrey;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.uploadbutton:hover {
+  filter: brightness(1.2);
+}
+.deletecurrentphoto {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  margin: 20px 0;
+  opacity: 0.9;
+  border: 1px solid lightgrey;
+  color: lightgrey;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #a33a3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deletecurrentphoto:hover {
+  filter: brightness(1.1);
+  background: #ad2525;
+}

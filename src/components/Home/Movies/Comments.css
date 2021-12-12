@@ -1,0 +1,158 @@
+.commentsholder {
+  display: flex;
+  flex-direction: column;
+  background: rgb(0, 0, 0, 0.5);
+  max-height: 420px;
+  border-radius: 15px;
+  justify-content: start;
+  padding: 15px 15px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-height: 900px) {
+  .commentsholder {
+    max-height: 340px;
+  }
+}
+@media only screen and (max-height: 842px) {
+  .commentsholder {
+    max-height: 250px;
+  }
+}
+@media only screen and (max-height: 745px) {
+  .commentsholder {
+    max-height: 180px;
+  }
+}
+@media only screen and (max-height: 690px) {
+  .commentsholder {
+    max-height: 120px;
+  }
+}
+@media only screen and (max-height: 620px) {
+  .commentsholder {
+    display: none;
+  }
+}
+.commentinput {
+  border-radius: 15px;
+  padding: 5px 40px 5px 10px;
+  width: calc(100% - 60px);
+}
+.commentform {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.comments {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+form {
+  justify-content: center;
+  width: 100%;
+}
+.singlecomment {
+  overflow: hidden;
+  font-size: 17px;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  max-width: 500px;
+  letter-spacing: 0.3px;
+  color: rgb(231, 231, 231);
+}
+.commentimg {
+  border-radius: 50%;
+  height: 36px;
+  width:36px;
+  object-fit:cover;
+}
+.commentwithpicture {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  align-items: start;
+  padding-bottom: 7px;
+}
+.singlecommentholder {
+  display: flex;
+  flex-direction: column;
+  background: rgba(173, 173, 173, 0.4);
+  border-radius: 20px;
+  margin-left: 10px;
+  position: relative;
+}
+.authorname {
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px 0 10px;
+  max-width: 500px;
+  color: rgb(250, 250, 250);
+}
+.deletecomment {
+  color: rgb(218, 218, 218);
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-left: 10px;
+}
+.likesidentificatoricon {
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  bottom: -12px;
+  background: rgba(173, 173, 173, 0.6);
+  border-radius: 8px;
+}
+.likescount{
+  font-size:13px;
+  margin-left:5px;
+  margin-right:5px;
+}
+.blueiconholder{
+  background-color:#2180b0;
+  border-radius: 50%;
+  width:18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.actuallike{
+  font-size: 16px;
+  padding: 2px;
+}
+.likesidentificatoriconlowlength {
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -26px;
+  bottom: 6px;
+  background: rgba(173, 173, 173, 0.6);
+  border-radius: 8px;
+}
+.timestamp{
+color:rgb(238, 236, 236);
+display: flex;
+white-space: nowrap;
+opacity: 0.9;
+font-weight: bold;
+}
+.minuteslikesholder{
+position:absolute;
+bottom:-22px;
+display:flex;
+left:5px;
+align-items: center;
+}

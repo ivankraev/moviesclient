@@ -1,0 +1,132 @@
+.movieformcontainer {
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(19, 18, 18);
+  align-items: center;
+  justify-content: center;
+  height: 160%;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px 1px rgb(148, 148, 148);
+  transform: translateY(-590px);
+  opacity: 0;
+}
+.buttonsholder {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 60px;
+}
+
+.addmovieform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submitbutton {
+  opacity: 0.9;
+  cursor: pointer;
+  color: white;
+  border-radius: 22px;
+  width: 220px;
+  border: 1px solid #cccccc;
+  height: 40px;
+  background: rgb(4, 110, 32);
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-family: "Poppins", sans-serif;
+}
+.submitbutton:active {
+  filter: brightness(1.2);
+}
+input {
+  height: 40px;
+  padding: 8px;
+}
+.secondarytext2 {
+  font-size: 20px;
+  top: 40px;
+}
+.secondarytext1 {
+  opacity: 0.8;
+  max-width: 200px;
+  background: #00ff00;
+  background: -webkit-linear-gradient(to left, #00ff00 0%, #00ffff 81%);
+  background: -moz-linear-gradient(to left, #00ff00 0%, #00ffff 81%);
+  background: linear-gradient(to left, #00ff00 0%, #00ffff 81%);
+  -webkit-background-clip: text;
+  background-clip: rgba;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 43px;
+}
+.secondarytext1light {
+  opacity: 0.9;
+  max-width: 200px;
+  background: #121fcf;
+  background: -webkit-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background: -moz-linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background-clip: rgba;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 43px;
+}
+
+#title {
+  border-radius: 8px 8px 0 0;
+  outline: none;
+  width: 250px;
+}
+#imageUrl {
+  border-radius: 0 0 8px 8px;
+  outline: none;
+}
+.textarea {
+  padding: 7px;
+  height: 130px;
+  width: 220px;
+  background-color: rgba(7, 7, 7, 0.9);
+  resize: none;
+  line-height: 1.3em;
+  color: rgb(196, 195, 195);
+  font-size: 16px;
+  width: 250px;
+  outline: none;
+}
+
+#options {
+  border: 1px solid grey;
+  color: lightgrey;
+  background: rgba(7, 7, 7, 0.9);
+  font-size: 18px;
+  height: 40px;
+  padding: 8px;
+  width: 250px;
+  outline: none;
+}
+#imageUrl {
+  width: 250px;
+}
+#exitbuttons {
+  color: white;
+  position: absolute;
+  display: flex;
+  font-size: 30px;
+  top: 0;
+  cursor: pointer;
+}
+.error {
+  color: red;
+  position: absolute;
+  top: 410px;
+  opacity: 0.9;
+}
